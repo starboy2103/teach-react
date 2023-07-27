@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+body{
+  overflow: hidden;
+}
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +38,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.lane1{
+  position: absolute;
+  left: 12vw;
+  top: 75vh;
+}
+.lane2{
+  position: absolute;
+  right: 35vw;
+  top: 75vh;
+}
+.vl {
+  border-left: 6px solid yellow;
+  height: 100vh;
+  left:50vw;
+  position: absolute;
+  z-index: 100;
 }

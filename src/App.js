@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 
+import {useState} from "react"
+import backg from './assets/bg.jpg'
+import Boat from './Components/Boat'
+
 function App() {
+  const [trigger,setTrigger]=useState(0);
+    
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={backg} alt="background" style={{height:"100vh", position:"absolute", left:0}}></img>
+      <div className="lane1">
+        <Boat trigger={trigger} setTrigger={setTrigger}/>
+      </div>
+      <div className="lane2">
+        <Boat trigger={trigger} setTrigger={setTrigger}/>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,9 @@
+.boatstart{
+    width: 15vw;
+    rotate: -90deg;
+    margin: 5vh;
+    position: absolute;
+}
+.paddle{
+    top:20vh;
+}
